@@ -1,2 +1,2 @@
 # AEDA
-PROJ class - FEUP MIEIC 1st Year
+PROJ class - FEUP MIEIC 2nd Year
