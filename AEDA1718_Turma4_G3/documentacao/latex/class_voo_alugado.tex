@@ -1,0 +1,210 @@
+\hypertarget{class_voo_alugado}{}\section{Voo\+Alugado Class Reference}
+\label{class_voo_alugado}\index{Voo\+Alugado@{Voo\+Alugado}}
+
+
+Class Rented\+Flight.  
+
+
+
+
+{\ttfamily \#include $<$Voo.\+h$>$}
+
+Inheritance diagram for Voo\+Alugado\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_voo_alugado}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_voo_alugado_a9cd24c055677e731d57033832a69f6aa}\label{class_voo_alugado_a9cd24c055677e731d57033832a69f6aa}} 
+\hyperlink{class_voo_alugado_a9cd24c055677e731d57033832a69f6aa}{Voo\+Alugado} ()
+\begin{DoxyCompactList}\small\item\em Rented\+Flight default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_voo_alugado_afb64b2d5ba50ff7394936f744693fb5c}{Voo\+Alugado} (std\+::string partida, std\+::string destino, \hyperlink{class_data}{Data} data\+\_\+partida, \hyperlink{class_data}{Data} data\+\_\+chegada, unsigned int preco)
+\begin{DoxyCompactList}\small\item\em Rented\+Flight constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_voo_alugado_aefb2f2262a9f14753020d136d39800a4}{Voo\+Alugado} (std\+::string text\+\_\+line, std\+::vector$<$ \hyperlink{class_passageiro}{Passageiro} $\ast$$>$ \&clientess)
+\begin{DoxyCompactList}\small\item\em Rented\+Flight constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_voo_alugado_a040e655285228522082290b69a9cd413}\label{class_voo_alugado_a040e655285228522082290b69a9cd413}} 
+void \hyperlink{class_voo_alugado_a040e655285228522082290b69a9cd413}{display} () const
+\begin{DoxyCompactList}\small\item\em Displays Flight information. \end{DoxyCompactList}\item 
+void \hyperlink{class_voo_alugado_aaf46e034bb4655c62b432f9669a7ed65}{remove\+Passageiro} (unsigned int id\+\_\+passageiro)
+\begin{DoxyCompactList}\small\item\em Removes Passenger from flight. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_voo_alugado_a6fba5571b65cb616c05643a2eee2cb69}\label{class_voo_alugado_a6fba5571b65cb616c05643a2eee2cb69}} 
+void \hyperlink{class_voo_alugado_a6fba5571b65cb616c05643a2eee2cb69}{display\+Reservations} () const
+\begin{DoxyCompactList}\small\item\em Displays all flight reservations. \end{DoxyCompactList}\item 
+void \hyperlink{class_voo_alugado_a5b146c059f3ffba9a2e2e843d6999d0a}{make\+Reservation} (\hyperlink{class_passageiro}{Passageiro} $\ast$cliente)
+\begin{DoxyCompactList}\small\item\em Makes reservation. \end{DoxyCompactList}\item 
+void \hyperlink{class_voo_alugado_afcd0ae78d182121fe1a6c010dbeca60d}{remove\+Reservation} (unsigned int id\+\_\+cliente)
+\begin{DoxyCompactList}\small\item\em Removes reservation. \end{DoxyCompactList}\item 
+void \hyperlink{class_voo_alugado_a0177e4dc4b81737dab75b41d765c2785}{make\+Promotion} (unsigned int lotacao)
+\begin{DoxyCompactList}\small\item\em Makes promotion. \end{DoxyCompactList}\item 
+bool \hyperlink{class_voo_alugado_a6ab1f96978f09e8c3477ee9e84259225}{check\+Full} (unsigned int lotacao)
+\begin{DoxyCompactList}\small\item\em Checks if the flight is full. \end{DoxyCompactList}\item 
+void \hyperlink{class_voo_alugado_a183aa2faff077d9a01b54023c1cf3032}{escreve\+\_\+fich\+\_\+voos} (std\+::ofstream \&myfile)
+\begin{DoxyCompactList}\small\item\em Writes flight information to file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class Rented\+Flight. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_voo_alugado_afb64b2d5ba50ff7394936f744693fb5c}\label{class_voo_alugado_afb64b2d5ba50ff7394936f744693fb5c}} 
+\index{Voo\+Alugado@{Voo\+Alugado}!Voo\+Alugado@{Voo\+Alugado}}
+\index{Voo\+Alugado@{Voo\+Alugado}!Voo\+Alugado@{Voo\+Alugado}}
+\subsubsection{\texorpdfstring{Voo\+Alugado()}{VooAlugado()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Voo\+Alugado\+::\+Voo\+Alugado (\begin{DoxyParamCaption}\item[{std\+::string}]{partida,  }\item[{std\+::string}]{destino,  }\item[{\hyperlink{class_data}{Data}}]{data\+\_\+partida,  }\item[{\hyperlink{class_data}{Data}}]{data\+\_\+chegada,  }\item[{unsigned int}]{preco }\end{DoxyParamCaption})}
+
+
+
+Rented\+Flight constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em partida} & Flight departure \\
+\hline
+{\em destino} & Flight destination \\
+\hline
+{\em data\+\_\+partida} & Flight departure date \\
+\hline
+{\em data\+\_\+chegada} & Flight landing date \\
+\hline
+{\em preco} & Flight price \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_voo_alugado_aefb2f2262a9f14753020d136d39800a4}\label{class_voo_alugado_aefb2f2262a9f14753020d136d39800a4}} 
+\index{Voo\+Alugado@{Voo\+Alugado}!Voo\+Alugado@{Voo\+Alugado}}
+\index{Voo\+Alugado@{Voo\+Alugado}!Voo\+Alugado@{Voo\+Alugado}}
+\subsubsection{\texorpdfstring{Voo\+Alugado()}{VooAlugado()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Voo\+Alugado\+::\+Voo\+Alugado (\begin{DoxyParamCaption}\item[{std\+::string}]{text\+\_\+line,  }\item[{std\+::vector$<$ \hyperlink{class_passageiro}{Passageiro} $\ast$$>$ \&}]{clientess }\end{DoxyParamCaption})}
+
+
+
+Rented\+Flight constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+\_\+line} & Line of text taken from file to create an text\+\_\+line. \\
+\hline
+{\em clientess} & All passengers, needed because we store their id on flights file. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_voo_alugado_a6ab1f96978f09e8c3477ee9e84259225}\label{class_voo_alugado_a6ab1f96978f09e8c3477ee9e84259225}} 
+\index{Voo\+Alugado@{Voo\+Alugado}!check\+Full@{check\+Full}}
+\index{check\+Full@{check\+Full}!Voo\+Alugado@{Voo\+Alugado}}
+\subsubsection{\texorpdfstring{check\+Full()}{checkFull()}}
+{\footnotesize\ttfamily bool Voo\+Alugado\+::check\+Full (\begin{DoxyParamCaption}\item[{unsigned int}]{lotacao }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks if the flight is full. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lotacao} & Airplance capacity \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_voo_ae8c7d7254ca23ed23f762a9b867aba91}{Voo}.
+
+\mbox{\Hypertarget{class_voo_alugado_a183aa2faff077d9a01b54023c1cf3032}\label{class_voo_alugado_a183aa2faff077d9a01b54023c1cf3032}} 
+\index{Voo\+Alugado@{Voo\+Alugado}!escreve\+\_\+fich\+\_\+voos@{escreve\+\_\+fich\+\_\+voos}}
+\index{escreve\+\_\+fich\+\_\+voos@{escreve\+\_\+fich\+\_\+voos}!Voo\+Alugado@{Voo\+Alugado}}
+\subsubsection{\texorpdfstring{escreve\+\_\+fich\+\_\+voos()}{escreve\_fich\_voos()}}
+{\footnotesize\ttfamily void Voo\+Alugado\+::escreve\+\_\+fich\+\_\+voos (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{myfile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Writes flight information to file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em myfile} & Ofstream associated with file to be written to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_voo_a3268d6d5ac51e31ebbdb11fd637544c1}{Voo}.
+
+\mbox{\Hypertarget{class_voo_alugado_a0177e4dc4b81737dab75b41d765c2785}\label{class_voo_alugado_a0177e4dc4b81737dab75b41d765c2785}} 
+\index{Voo\+Alugado@{Voo\+Alugado}!make\+Promotion@{make\+Promotion}}
+\index{make\+Promotion@{make\+Promotion}!Voo\+Alugado@{Voo\+Alugado}}
+\subsubsection{\texorpdfstring{make\+Promotion()}{makePromotion()}}
+{\footnotesize\ttfamily void Voo\+Alugado\+::make\+Promotion (\begin{DoxyParamCaption}\item[{unsigned int}]{lotacao }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Makes promotion. 
+
+Capacity to check if promotion is available 
+
+Reimplemented from \hyperlink{class_voo_abe4f7816ae9132314e0288e7b8a077d8}{Voo}.
+
+\mbox{\Hypertarget{class_voo_alugado_a5b146c059f3ffba9a2e2e843d6999d0a}\label{class_voo_alugado_a5b146c059f3ffba9a2e2e843d6999d0a}} 
+\index{Voo\+Alugado@{Voo\+Alugado}!make\+Reservation@{make\+Reservation}}
+\index{make\+Reservation@{make\+Reservation}!Voo\+Alugado@{Voo\+Alugado}}
+\subsubsection{\texorpdfstring{make\+Reservation()}{makeReservation()}}
+{\footnotesize\ttfamily void Voo\+Alugado\+::make\+Reservation (\begin{DoxyParamCaption}\item[{\hyperlink{class_passageiro}{Passageiro} $\ast$}]{cliente }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Makes reservation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & Passenger to be reserved \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_voo_aa308fcf651fdf54b0a03e881c6d8fea4}{Voo}.
+
+\mbox{\Hypertarget{class_voo_alugado_aaf46e034bb4655c62b432f9669a7ed65}\label{class_voo_alugado_aaf46e034bb4655c62b432f9669a7ed65}} 
+\index{Voo\+Alugado@{Voo\+Alugado}!remove\+Passageiro@{remove\+Passageiro}}
+\index{remove\+Passageiro@{remove\+Passageiro}!Voo\+Alugado@{Voo\+Alugado}}
+\subsubsection{\texorpdfstring{remove\+Passageiro()}{removePassageiro()}}
+{\footnotesize\ttfamily void Voo\+Alugado\+::remove\+Passageiro (\begin{DoxyParamCaption}\item[{unsigned int}]{id\+\_\+passageiro }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Removes Passenger from flight. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+passageiro} & Passenger to be removed ID \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_voo_ad0c67dc3c01f30746e150f26d5bf15ac}{Voo}.
+
+\mbox{\Hypertarget{class_voo_alugado_afcd0ae78d182121fe1a6c010dbeca60d}\label{class_voo_alugado_afcd0ae78d182121fe1a6c010dbeca60d}} 
+\index{Voo\+Alugado@{Voo\+Alugado}!remove\+Reservation@{remove\+Reservation}}
+\index{remove\+Reservation@{remove\+Reservation}!Voo\+Alugado@{Voo\+Alugado}}
+\subsubsection{\texorpdfstring{remove\+Reservation()}{removeReservation()}}
+{\footnotesize\ttfamily void Voo\+Alugado\+::remove\+Reservation (\begin{DoxyParamCaption}\item[{unsigned int}]{id\+\_\+cliente }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Removes reservation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & Passenger to be removed reservation \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_voo_ab9b59a39248b92a5f106800117436d90}{Voo}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Voo.\+h\item 
+voo.\+cpp\end{DoxyCompactItemize}

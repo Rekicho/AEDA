@@ -1,0 +1,4 @@
+S;C;12;2;Antero;Jogador de Andebol;20/4/1990;1000;2
+S;C;35;4;Bruno;Explicador;12/12/2012;50;8
+S;N;18;666;Jeff
+I;N;17;999;Joao

@@ -1,0 +1,182 @@
+\hypertarget{class_tecnico}{}\section{Tecnico Class Reference}
+\label{class_tecnico}\index{Tecnico@{Tecnico}}
+
+
+Class Tecnician.  
+
+
+
+
+{\ttfamily \#include $<$Tecnico.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tecnico_a55698f063f7f301fd7a7d05f23787ad2}\label{class_tecnico_a55698f063f7f301fd7a7d05f23787ad2}} 
+\hyperlink{class_tecnico_a55698f063f7f301fd7a7d05f23787ad2}{Tecnico} ()
+\begin{DoxyCompactList}\small\item\em Tecnician default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_tecnico_a9b95e22f7d9328c22ea0e37faf459058}{Tecnico} (unsigned int id)
+\begin{DoxyCompactList}\small\item\em Tecnician constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_tecnico_aa6f0757f826239296ab9286149494c1f}{Tecnico} (std\+::string nome, std\+::vector$<$ std\+::string $>$ especialidade)
+\begin{DoxyCompactList}\small\item\em Tecnician constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_tecnico_a34c9eb9a3a60926081f1023daaa19754}{Tecnico} (std\+::string text\+\_\+line, std\+::vector$<$ \hyperlink{class_aviao}{Aviao} $>$ \&avioes)
+\begin{DoxyCompactList}\small\item\em Tecnician constructor. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_tecnico_ac83d463f1f27671e9dc64045eb841644}{get\+ID} () const
+\begin{DoxyCompactList}\small\item\em Gets tecnician id. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_tecnico_ac26bc8c39d4b0a174d3e7cacd53414aa}{getnome} () const
+\begin{DoxyCompactList}\small\item\em Gets tecnician name. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_tecnico_ad481c5d2e8616a347b26dbd5df431fa1}{getespecialidades} () const
+\begin{DoxyCompactList}\small\item\em Gets tecnician specialities. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_aviao}{Aviao} $>$ \hyperlink{class_tecnico_abbc1049bcfe9772a1155730950b5736f}{getmanutencoes} () const
+\begin{DoxyCompactList}\small\item\em Gets tecnician maintenances. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tecnico_a1d349147fbe3e2947debcbfae6fc7d21}\label{class_tecnico_a1d349147fbe3e2947debcbfae6fc7d21}} 
+void \hyperlink{class_tecnico_a1d349147fbe3e2947debcbfae6fc7d21}{display} () const
+\begin{DoxyCompactList}\small\item\em Displays Tecnician information. \end{DoxyCompactList}\item 
+void \hyperlink{class_tecnico_a6b628a20bb7c268776e26a29ca8b8a73}{change} ()
+\begin{DoxyCompactList}\small\item\em Changes Tecnician information. \end{DoxyCompactList}\item 
+bool \hyperlink{class_tecnico_a40d2c35c86d41d1410aa6ac930159644}{operator$<$} (const \hyperlink{class_tecnico}{Tecnico} \&t1) const
+\begin{DoxyCompactList}\small\item\em Compares two Tecnicians. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class Tecnician. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_tecnico_a9b95e22f7d9328c22ea0e37faf459058}\label{class_tecnico_a9b95e22f7d9328c22ea0e37faf459058}} 
+\index{Tecnico@{Tecnico}!Tecnico@{Tecnico}}
+\index{Tecnico@{Tecnico}!Tecnico@{Tecnico}}
+\subsubsection{\texorpdfstring{Tecnico()}{Tecnico()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Tecnico\+::\+Tecnico (\begin{DoxyParamCaption}\item[{unsigned int}]{id }\end{DoxyParamCaption})}
+
+
+
+Tecnician constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Tecnician ID \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tecnico_aa6f0757f826239296ab9286149494c1f}\label{class_tecnico_aa6f0757f826239296ab9286149494c1f}} 
+\index{Tecnico@{Tecnico}!Tecnico@{Tecnico}}
+\index{Tecnico@{Tecnico}!Tecnico@{Tecnico}}
+\subsubsection{\texorpdfstring{Tecnico()}{Tecnico()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Tecnico\+::\+Tecnico (\begin{DoxyParamCaption}\item[{std\+::string}]{nome,  }\item[{std\+::vector$<$ std\+::string $>$}]{especialidade }\end{DoxyParamCaption})}
+
+
+
+Tecnician constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & Tecnician name \\
+\hline
+{\em especialidade} & Tecnician specialities \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tecnico_a34c9eb9a3a60926081f1023daaa19754}\label{class_tecnico_a34c9eb9a3a60926081f1023daaa19754}} 
+\index{Tecnico@{Tecnico}!Tecnico@{Tecnico}}
+\index{Tecnico@{Tecnico}!Tecnico@{Tecnico}}
+\subsubsection{\texorpdfstring{Tecnico()}{Tecnico()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Tecnico\+::\+Tecnico (\begin{DoxyParamCaption}\item[{std\+::string}]{text\+\_\+line,  }\item[{std\+::vector$<$ \hyperlink{class_aviao}{Aviao} $>$ \&}]{avioes }\end{DoxyParamCaption})}
+
+
+
+Tecnician constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+\_\+line} & Line taken from Tecnician text file \\
+\hline
+{\em avioes} & Airplanes to be used to get tecnician maintenances \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tecnico_a6b628a20bb7c268776e26a29ca8b8a73}\label{class_tecnico_a6b628a20bb7c268776e26a29ca8b8a73}} 
+\index{Tecnico@{Tecnico}!change@{change}}
+\index{change@{change}!Tecnico@{Tecnico}}
+\subsubsection{\texorpdfstring{change()}{change()}}
+{\footnotesize\ttfamily void Tecnico\+::change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Changes Tecnician information. 
+
+Changes Tecnician information, with information provided by the user \mbox{\Hypertarget{class_tecnico_ad481c5d2e8616a347b26dbd5df431fa1}\label{class_tecnico_ad481c5d2e8616a347b26dbd5df431fa1}} 
+\index{Tecnico@{Tecnico}!getespecialidades@{getespecialidades}}
+\index{getespecialidades@{getespecialidades}!Tecnico@{Tecnico}}
+\subsubsection{\texorpdfstring{getespecialidades()}{getespecialidades()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Tecnico\+::getespecialidades (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets tecnician specialities. 
+
+\begin{DoxyReturn}{Returns}
+Tecnician specialities 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tecnico_ac83d463f1f27671e9dc64045eb841644}\label{class_tecnico_ac83d463f1f27671e9dc64045eb841644}} 
+\index{Tecnico@{Tecnico}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Tecnico@{Tecnico}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily unsigned int Tecnico\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets tecnician id. 
+
+\begin{DoxyReturn}{Returns}
+Tecnician ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tecnico_abbc1049bcfe9772a1155730950b5736f}\label{class_tecnico_abbc1049bcfe9772a1155730950b5736f}} 
+\index{Tecnico@{Tecnico}!getmanutencoes@{getmanutencoes}}
+\index{getmanutencoes@{getmanutencoes}!Tecnico@{Tecnico}}
+\subsubsection{\texorpdfstring{getmanutencoes()}{getmanutencoes()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_aviao}{Aviao} $>$ Tecnico\+::getmanutencoes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets tecnician maintenances. 
+
+\begin{DoxyReturn}{Returns}
+Tecnician maintenances 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tecnico_ac26bc8c39d4b0a174d3e7cacd53414aa}\label{class_tecnico_ac26bc8c39d4b0a174d3e7cacd53414aa}} 
+\index{Tecnico@{Tecnico}!getnome@{getnome}}
+\index{getnome@{getnome}!Tecnico@{Tecnico}}
+\subsubsection{\texorpdfstring{getnome()}{getnome()}}
+{\footnotesize\ttfamily string Tecnico\+::getnome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets tecnician name. 
+
+\begin{DoxyReturn}{Returns}
+Tecnician name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tecnico_a40d2c35c86d41d1410aa6ac930159644}\label{class_tecnico_a40d2c35c86d41d1410aa6ac930159644}} 
+\index{Tecnico@{Tecnico}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Tecnico@{Tecnico}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Tecnico\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_tecnico}{Tecnico} \&}]{t1 }\end{DoxyParamCaption}) const}
+
+
+
+Compares two Tecnicians. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t1} & Tecnician to compare with\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if last maintenance is before a1 last maintenance and false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Tecnico.\+h\item 
+tecnico.\+cpp\end{DoxyCompactItemize}

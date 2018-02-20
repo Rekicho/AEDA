@@ -1,0 +1,192 @@
+\hypertarget{class_passageiro}{}\section{Passageiro Class Reference}
+\label{class_passageiro}\index{Passageiro@{Passageiro}}
+
+
+Class Passenger.  
+
+
+
+
+{\ttfamily \#include $<$Passageiro.\+h$>$}
+
+Inheritance diagram for Passageiro\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_passageiro}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_passageiro_af094ae0224f9b9907e81ad6eef45dd1d}\label{class_passageiro_af094ae0224f9b9907e81ad6eef45dd1d}} 
+\hyperlink{class_passageiro_af094ae0224f9b9907e81ad6eef45dd1d}{Passageiro} ()
+\begin{DoxyCompactList}\small\item\em Passenger default constructor. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_passageiro_aaca598f3dba0c8a4457ac2f222e84c81}{get\+ID} () const
+\begin{DoxyCompactList}\small\item\em Gets Passenger ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_passageiro_ad2198f1aa59f29deda7801509494bf72}\label{class_passageiro_ad2198f1aa59f29deda7801509494bf72}} 
+virtual void \hyperlink{class_passageiro_ad2198f1aa59f29deda7801509494bf72}{display} () const
+\begin{DoxyCompactList}\small\item\em Displays Passenger information. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_passageiro_acfec9100c1a2a5b7cdf218f2eb4ea62e}{change} ()
+\begin{DoxyCompactList}\small\item\em Changes Passenger information. \end{DoxyCompactList}\item 
+virtual float \hyperlink{class_passageiro_ad2477f9716b82c3ffbcdfca5bb776679}{get\+Price\+With\+Card} (unsigned int preco)
+\begin{DoxyCompactList}\small\item\em Gets Flight price with card. \end{DoxyCompactList}\item 
+virtual std\+::string \hyperlink{class_passageiro_a1871c2ce0cc1254ffc665a415ec7a815}{get\+Nome} ()=0
+\begin{DoxyCompactList}\small\item\em Gets Passenger name. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_passageiro_a922b6669669a6e2af2328606013a3a6b}{subtract\+\_\+to\+\_\+balance} (unsigned int valor)
+\begin{DoxyCompactList}\small\item\em Subtracts from balance. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_passageiro_ac7da59960d323e9bc75dda2e34d7a254}{add\+\_\+to\+\_\+balance} (unsigned int valor)
+\begin{DoxyCompactList}\small\item\em Adds to balance. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_passageiro_aa38cf36a9d750417fc0b83781886a852}{escreve\+\_\+fich\+\_\+passageiro} (std\+::ofstream \&myfile)
+\begin{DoxyCompactList}\small\item\em Writes passenger information to file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_passageiro_aa8e0c8d33b61d163a91f8bd60a0ce69c}\label{class_passageiro_aa8e0c8d33b61d163a91f8bd60a0ce69c}} 
+unsigned int {\bfseries id}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_passageiro_a722b13c9d8812b05345934e4c8fc58a5}\label{class_passageiro_a722b13c9d8812b05345934e4c8fc58a5}} 
+static unsigned int {\bfseries ultimo\+\_\+id} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class Passenger. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_passageiro_ac7da59960d323e9bc75dda2e34d7a254}\label{class_passageiro_ac7da59960d323e9bc75dda2e34d7a254}} 
+\index{Passageiro@{Passageiro}!add\+\_\+to\+\_\+balance@{add\+\_\+to\+\_\+balance}}
+\index{add\+\_\+to\+\_\+balance@{add\+\_\+to\+\_\+balance}!Passageiro@{Passageiro}}
+\subsubsection{\texorpdfstring{add\+\_\+to\+\_\+balance()}{add\_to\_balance()}}
+{\footnotesize\ttfamily void Passageiro\+::add\+\_\+to\+\_\+balance (\begin{DoxyParamCaption}\item[{unsigned int}]{valor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds to balance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Value to be added to balance \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_passageiro_cartao_ac1c2a6ef96d46ffd0a37e757d1e605a1}{Passageiro\+Cartao}, and \hyperlink{class_passageiro_normal_a8761222e6cd84eb8185507a591845a46}{Passageiro\+Normal}.
+
+\mbox{\Hypertarget{class_passageiro_acfec9100c1a2a5b7cdf218f2eb4ea62e}\label{class_passageiro_acfec9100c1a2a5b7cdf218f2eb4ea62e}} 
+\index{Passageiro@{Passageiro}!change@{change}}
+\index{change@{change}!Passageiro@{Passageiro}}
+\subsubsection{\texorpdfstring{change()}{change()}}
+{\footnotesize\ttfamily void Passageiro\+::change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Changes Passenger information. 
+
+Changes Passenger information, with information provided by the user 
+
+Reimplemented in \hyperlink{class_passageiro_cartao_af1e3f1909d80c783301eaece5926dc47}{Passageiro\+Cartao}, and \hyperlink{class_passageiro_normal_a0e8bb38b9a15acff1b8e2ab1b2fb2dfe}{Passageiro\+Normal}.
+
+\mbox{\Hypertarget{class_passageiro_aa38cf36a9d750417fc0b83781886a852}\label{class_passageiro_aa38cf36a9d750417fc0b83781886a852}} 
+\index{Passageiro@{Passageiro}!escreve\+\_\+fich\+\_\+passageiro@{escreve\+\_\+fich\+\_\+passageiro}}
+\index{escreve\+\_\+fich\+\_\+passageiro@{escreve\+\_\+fich\+\_\+passageiro}!Passageiro@{Passageiro}}
+\subsubsection{\texorpdfstring{escreve\+\_\+fich\+\_\+passageiro()}{escreve\_fich\_passageiro()}}
+{\footnotesize\ttfamily virtual void Passageiro\+::escreve\+\_\+fich\+\_\+passageiro (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{myfile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Writes passenger information to file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em myfile} & Ofstream associated with file to be written to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_passageiro_cartao_a3c4167d97a0a71215970d7473f9629c1}{Passageiro\+Cartao}, and \hyperlink{class_passageiro_normal_a86e91d053cc146d645dbc8356ea28d35}{Passageiro\+Normal}.
+
+\mbox{\Hypertarget{class_passageiro_aaca598f3dba0c8a4457ac2f222e84c81}\label{class_passageiro_aaca598f3dba0c8a4457ac2f222e84c81}} 
+\index{Passageiro@{Passageiro}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Passageiro@{Passageiro}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily unsigned int Passageiro\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets Passenger ID. 
+
+\begin{DoxyReturn}{Returns}
+Returns Passenger ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_passageiro_a1871c2ce0cc1254ffc665a415ec7a815}\label{class_passageiro_a1871c2ce0cc1254ffc665a415ec7a815}} 
+\index{Passageiro@{Passageiro}!get\+Nome@{get\+Nome}}
+\index{get\+Nome@{get\+Nome}!Passageiro@{Passageiro}}
+\subsubsection{\texorpdfstring{get\+Nome()}{getNome()}}
+{\footnotesize\ttfamily virtual std\+::string Passageiro\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets Passenger name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preco} & Flight price\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns Passenger name 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_passageiro_cartao_a5323cda881d4ed94680f7c4e654a7456}{Passageiro\+Cartao}, and \hyperlink{class_passageiro_normal_a09b0c8bc050ba663965559e94f5c5d1d}{Passageiro\+Normal}.
+
+\mbox{\Hypertarget{class_passageiro_ad2477f9716b82c3ffbcdfca5bb776679}\label{class_passageiro_ad2477f9716b82c3ffbcdfca5bb776679}} 
+\index{Passageiro@{Passageiro}!get\+Price\+With\+Card@{get\+Price\+With\+Card}}
+\index{get\+Price\+With\+Card@{get\+Price\+With\+Card}!Passageiro@{Passageiro}}
+\subsubsection{\texorpdfstring{get\+Price\+With\+Card()}{getPriceWithCard()}}
+{\footnotesize\ttfamily float Passageiro\+::get\+Price\+With\+Card (\begin{DoxyParamCaption}\item[{unsigned int}]{preco }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets Flight price with card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preco} & Flight price\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns price with card 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_passageiro_cartao_a2bd1b79ef18e3289545386a8740b1136}{Passageiro\+Cartao}, and \hyperlink{class_passageiro_normal_a8932fec94ce61c2488b51c90955f3d34}{Passageiro\+Normal}.
+
+\mbox{\Hypertarget{class_passageiro_a922b6669669a6e2af2328606013a3a6b}\label{class_passageiro_a922b6669669a6e2af2328606013a3a6b}} 
+\index{Passageiro@{Passageiro}!subtract\+\_\+to\+\_\+balance@{subtract\+\_\+to\+\_\+balance}}
+\index{subtract\+\_\+to\+\_\+balance@{subtract\+\_\+to\+\_\+balance}!Passageiro@{Passageiro}}
+\subsubsection{\texorpdfstring{subtract\+\_\+to\+\_\+balance()}{subtract\_to\_balance()}}
+{\footnotesize\ttfamily void Passageiro\+::subtract\+\_\+to\+\_\+balance (\begin{DoxyParamCaption}\item[{unsigned int}]{valor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Subtracts from balance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Value to be subtracted from balance \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_passageiro_cartao_ae6d6b0b1b1089b4904a0753c5446baa9}{Passageiro\+Cartao}, and \hyperlink{class_passageiro_normal_ae54a661ff7ac80c35175ef925c460766}{Passageiro\+Normal}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Passageiro.\+h\item 
+passageiro.\+cpp\end{DoxyCompactItemize}
